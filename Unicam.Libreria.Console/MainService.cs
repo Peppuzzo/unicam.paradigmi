@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace Unicam.Libreria.Console
             _context = context;
         }
 
-        private void JoinManuale()
+        private void JoinManuale() //JoinManuale
         {
             var result = (from l in _context.Libri
                           join a in _context.Autori on l.IdAutore equals a.Id
